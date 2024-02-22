@@ -45,7 +45,6 @@ public class ItemController {
 	public ResponseEntity<Item> patchItem(@PathVariable int id, @RequestBody Item updatedItem) {
 
 		return this.service.patchItem(id, updatedItem);
-
 	}
 
 	@DeleteMapping("/delete/{id}")
